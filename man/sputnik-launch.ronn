@@ -1,0 +1,12 @@
+sputnik-launch(1) -- Install and configure your developer profile
+=======================================================================
+
+## SYNOPSIS
+
+`sputnik launch` [--dry-run]
+
+## DESCRIPTION
+
+Installs and configures all the profiles and their dependencies
+according to your Sputnikfile. First, sputnik will update all profiles
+from the sources list in your `Sputnikfile(5)`

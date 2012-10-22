@@ -1,0 +1,48 @@
+sputnik(1) -- Manage Your Sputnik Profile
+=======================================
+
+## SYNOPSIS
+
+`sputnik` COMMAND [--verbose] [ARGS]
+
+## DESCRIPTION
+
+Sputnik is a tool for keeping your entire development environment
+under source control. It is responsible for not just installing, but
+also configuring according to your own personalizations, the software
+that comprises that environment.
+
+To do this, Sputnik defines many "profiles" which define a a set of
+packages to be installed along with an array of configuration options
+with which the package can be customized.
+
+The list of profiles you want is listed in your `Sputnikfile(5)`
+which is usually located at `~/.sputnik/Sputnikfile`. This file
+contains not only the list of profiles that you want, but also
+the configuration of those profiles.
+
+## ENVIRONMENT
+
+Under the hood, a sputnik profile is just a chef run list: a set
+of recipes to converge upon a desired state of
+
+## OPTIONS
+
+* `--verbose`:
+  Prints out additional logging information
+
+## COMMANDS
+
+`sputnik` is divided into several subcommands
+
+* [sputnik launch(1)][sputnik-launch]:
+  Install all configure all profiles found in your `Sputnikfile(5)`
+
+* [sputnik list(1)][sputnick-list]:
+  Show all profiles you have selected.
+
+* [sputnik search(1)][sputnik-search]:
+  Search the list of available sputnik profiles
+
+* [sputnick show(1)][sputnik-show]:
+  Display detailed information about a Sputnik profile
