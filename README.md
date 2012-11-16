@@ -92,7 +92,11 @@ given by [Matt Kocher][3] as well as [Instant Infrastructure][4] by [Chris McCli
 
 ## Sponsorship
 
+![http://dell.com](https://raw.github.com/mattray/sputnik-demo-repo/master/cookbooks/demo-app/files/default/dell.png)
+
+
 The Sputnik Project is graciously sponsored by Dell.
+
 
 [1]: https://github.com/pivotal/pivotal_workstation
 [2]: http://www.youtube.com/watch?v=kfQy8UzBUvY&feature=plcp
