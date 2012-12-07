@@ -32,7 +32,7 @@ module Sputnik
 
   class UnknownCommandError < StandardError
     def initialize(command)
-      super "unkown command #{command}"
+      super "unknown command #{command}"
     end
   end
 end
