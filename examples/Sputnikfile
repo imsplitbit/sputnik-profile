@@ -2,8 +2,10 @@
 # be specified
 source "git://github.com/sputnik/sputnik-profiles"
 
-# I use zshell
-profile :zsh
+# I use prezto, which is a plugin framework for zsh
+profile :prezto do |prezto|
+  prezto.modules 
+end
 
 # We want to use Ruby with the rbenv manager
 # we always wan to have 1.9.3, 1.8.7 and jruby intalled
