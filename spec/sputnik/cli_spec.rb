@@ -8,12 +8,18 @@ describe 'the sputnik CLI' do
       'foo:bar:baz' => @foo
     }
     @console = mock('console')
-    @cli = Sputnik::CLI.new(@loader, @console)
+    @setup = mock('process setup')
+    @setup.stub(:call)
+    @cli = Sputnik::CLI.new(@loader, @console, @setup)
   end
   describe 'sending it a known command with options' do
     before do
       @foo.stub! :call
       @cli.start 'foo:bar:baz', '-h', '--no-worries'
+    end
+
+    it 'runs the setup' do
+      @setup.should have_received :call
     end
 
     it "runs that command with those options" do
